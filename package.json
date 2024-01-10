@@ -1,0 +1,58 @@
+{
+  "name": "projet-1-evmonitor-back",
+  "version": "1.0.0",
+  "description": "Monitoring App For Ethereum Addresses",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --forceExit --detectOpenHandles  --watchAll --maxWorkers=1",
+    "test:watch": "jest --watch",
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "db:reset": "psql -U admin -d evmonitor -f ./data/create_tables.sql"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/O-clock-Cheesecake/projet-1-evmonitor-back.git"
+  },
+  "keywords": [
+    "crypto",
+    "blockchain",
+    "address",
+    "react",
+    "node"
+  ],
+  "author": "Hugo Rouf, Victor Marc, Gaetan Fraysse, Adrien Desclaux",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/O-clock-Cheesecake/projet-1-evmonitor-back/issues"
+  },
+  "homepage": "https://github.com/O-clock-Cheesecake/projet-1-evmonitor-back#readme",
+  "devDependencies": {
+    "eslint": "^8.54.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "jest": "^29.7.0",
+    "jest-mock-req-res": "^1.0.2",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.1.0",
+    "supertest": "^6.3.3"
+  },
+  "dependencies": {
+    "@moralisweb3/common-evm-utils": "^2.23.2",
+    "@quicknode/sdk": "^1.1.5",
+    "axios": "^1.6.2",
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.9.0",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "moralis": "^2.23.2",
+    "pg": "^8.11.3",
+    "sequelize": "^6.35.1",
+    "web3": "^4.3.0",
+    "web3-validator": "^2.0.3"
+  }
+}
